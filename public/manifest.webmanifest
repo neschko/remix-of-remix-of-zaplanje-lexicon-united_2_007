@@ -1,0 +1,15 @@
+{
+  "name": "Заплањски Речник",
+  "short_name": "Заплање",
+  "description": "Интерактивни речник заплањског говора — SANU издање, ради без интернета.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5efe1",
+  "theme_color": "#7a1f33",
+  "lang": "sr-Cyrl",
+  "icons": [
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
