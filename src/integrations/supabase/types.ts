@@ -14,6 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
+      analysis_history: {
+        Row: {
+          audio_path: string | null
+          created_at: string
+          id: string
+          input_text: string | null
+          kind: string
+          model: string
+          result: Json
+          user_id: string
+        }
+        Insert: {
+          audio_path?: string | null
+          created_at?: string
+          id?: string
+          input_text?: string | null
+          kind: string
+          model: string
+          result: Json
+          user_id: string
+        }
+        Update: {
+          audio_path?: string | null
+          created_at?: string
+          id?: string
+          input_text?: string | null
+          kind?: string
+          model?: string
+          result?: Json
+          user_id?: string
+        }
+        Relationships: []
+      }
       comments: {
         Row: {
           author_name: string | null
@@ -100,6 +133,45 @@ export type Database = {
           synonyms?: string[]
           type?: string | null
           type_full?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      entry_corrections: {
+        Row: {
+          confidence: number | null
+          corrected: Json
+          created_at: string
+          entry_id: string
+          id: string
+          original: Json
+          reviewed_at: string | null
+          reviewed_by: string | null
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          confidence?: number | null
+          corrected: Json
+          created_at?: string
+          entry_id: string
+          id?: string
+          original: Json
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          confidence?: number | null
+          corrected?: Json
+          created_at?: string
+          entry_id?: string
+          id?: string
+          original?: Json
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          status?: string
           updated_at?: string
         }
         Relationships: []
